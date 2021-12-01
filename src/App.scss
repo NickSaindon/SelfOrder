@@ -1,0 +1,345 @@
+$primary: #FFC72C;
+$secondary: #DA291C;
+$black: #27251F;
+$white: #ffffff;
+$green: green;
+$navy-blue: #003080;
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Home Component
+.home-container {
+  cursor: pointer;
+  color: $white;
+  font-family: 'Raleway', sans-serif;
+
+  .home-content {
+    background-color: $secondary;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 50px solid $white;
+    h1 {
+      font-size: 150px;
+      font-weight: bold;
+      margin: 0;
+      line-height: 120px;
+      span {
+        font-size: 100px;
+        font-weight: 400;
+        font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
+      }
+    }
+    h3 {
+      border-top: 2px solid $white;
+      font-size: 50px;
+      span {
+        font-size: 50px;
+        font-weight: 400;
+        font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
+      }
+    }
+    i {
+      font-size: 50px;
+    }
+  }
+  .home-footer {
+    background-color: $green;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      padding-top: 10px;
+      letter-spacing: 3px;
+    }
+    #logo {
+      height: 50px;
+    }
+  }
+}
+
+// Dinning Component
+.dinning-container {
+  background-color: $navy-blue;
+  color: $white;
+  .dinning-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #logo {
+      height: 180px;
+      margin-bottom: 50px
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      color: $white;
+      padding-bottom: 25px;
+    }
+  }
+  .card {
+    border: 15px solid $white;
+    border-radius: 15px;
+    .card-body {
+      background-color: $navy-blue;
+      #eat-in-icon {
+        margin: 50px 0;
+        height: 250px;
+      } 
+      #take-out-icon {
+        height: 250px;
+        margin: 50px 0;
+      }
+      button {
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Order Component
+.order-container {
+  padding-bottom: 50px;
+  .select-category {
+    position: fixed;
+    #logo {
+      width: 100px;
+    }
+    .list-group-item {
+      border: none;
+    }
+    img {
+      width: 100px;
+    }
+  }
+  .menu-container {
+    padding-bottom: 150px;
+    .card {
+      cursor: pointer;
+    }
+    h1 {
+      padding: 50px 0 25px 25px;
+    }
+  }
+  input {
+    text-align: center;
+  }
+  .card {
+    box-shadow: 1px 2px 4px 0px #bebebe;
+    .product-footer {
+      padding: 15px;
+      font-weight: bold;
+      h5 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .order-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px 0;
+    background-color: $white;
+    .order-tracker {
+      margin: 25px 0;
+    }
+  }
+}
+
+// OrderModal Component
+.modal {
+  .modal-dialog {
+    .modal-content {
+      padding-bottom: 16px;
+    }
+  }
+}
+
+// Review Component
+.review-container {
+  background-color: $navy-blue;
+  height: 100%;
+  min-height: 100vh;
+  padding-bottom: 175px;
+  input {
+    text-align: center;
+  }
+  .review-header {
+    color: $white;
+    font-weight: bold;
+    #logo {
+      margin: 20px 0;
+      height: 100px;
+    }
+  }
+  .review-body {
+    .card {
+      .card-body {
+        img {
+          height: 75px;
+        }
+      }
+    }
+  }
+  .review-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: $navy-blue;
+    .container {
+      background-color: $white;
+      padding: 20px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+}
+
+// SelectPayment Component
+.select-payment-container {
+  background-color: $navy-blue;
+  .select-payment-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #logo {
+      height: 180px;
+      margin-bottom: 50px
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      color: $white;
+      padding-bottom: 25px;
+    }
+  }
+  .card {
+    border: 15px solid $white;
+    border-radius: 15px;
+    .card-body {
+      background-color: $navy-blue;
+      #pay-here-icon {
+        margin: 50px 0;
+        height: 250px;
+      }
+      #at-counter-icon {
+        height: 250px;
+        margin: 50px 0;
+      }
+      button {
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Payment Component
+.payment-container {
+  background-color: $navy-blue;
+  height: 100vh;
+  padding-top: 25px;
+  #logo {
+    height: 180px;
+    margin-bottom: 50px
+  }
+  h1 {
+    color: $white;
+    padding-bottom: 50px; 
+  }
+  .spinner-border {
+    width: 4rem;
+    height: 4rem;
+  }
+  .payment-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: $navy-blue;
+    padding: 20px;
+    button {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+}
+
+// Complete Component
+.complete-container {
+  background-color: $navy-blue;
+  height: 100vh;
+  padding-top: 25px;
+  color: $white;
+  #logo {
+    height: 180px;
+    margin-bottom: 50px
+  }
+  h1 {
+    font-size: 150px;
+  }
+  h2 {
+    font-size: 50px 
+  }
+  .spinner-border {
+    width: 4rem;
+    height: 4rem;
+  }
+  .complete-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: $navy-blue;
+    padding: 20px;
+    button {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+}
+
+// Queue Component
+.queue-container {
+  min-height: 100vh;
+  background-color: $navy-blue;
+  color: $white;
+  #logo {
+    margin-top: 25px;
+    height: 140px;
+    margin-bottom: 50px
+  }
+}
+
+// Admin Component
+.admin-container {
+  min-height: 100vh;
+  background-color: $navy-blue;
+  color: $white;
+  .container {
+    background-color: $white;
+  }
+}

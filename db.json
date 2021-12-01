@@ -1,0 +1,233 @@
+{
+  "categories": [
+    {
+      "name": "Beverages",
+      "image": "/images/beverages.jpg"
+    },
+    {
+      "name": "Breakfast",
+      "image": "/images/breakfast.jpg"
+    },
+    {
+      "name": "Burgers",
+      "image": "/images/burgers.jpg"
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "category": "Beverages",
+      "name": "Coca-Cola",
+      "calorie": 120,
+      "price": 1,
+      "image": "/images/t-mcdonalds-Coca-Cola-Classic-Small.jpg"
+    },
+    {
+      "_id": 2,
+      "category": "Beverages",
+      "name": "Vanill Shake",
+      "price": 1.5,
+      "calorie": 360,
+      "image": "/images/t-mcdonalds-Vanilla-McCafe-Shake-Medium.jpg"
+    },
+    {
+      "_id": 3,
+      "category": "Beverages",
+      "name": "Hot Chocolate",
+      "price": 2,
+      "calorie": 170,
+      "image": "/images/t-mcdonalds-McCafe-Hot-Chocolate-Medium.jpg"
+    },
+    {
+      "_id": 4,
+      "category": "Breakfast",
+      "name": "Bacon & Biscuit",
+      "price": 1.9,
+      "calorie": 90,
+      "image": "/images/t-mcdonalds-Bacon-Egg-Cheese-Biscuit-Regular-Size-Biscuit.jpg"
+    },
+    {
+      "_id": 5,
+      "category": "Breakfast",
+      "name": "Blueberry Muffin",
+      "price": 1.5,
+      "calorie": 120,
+      "image": "/images/t-blueberry-muffin.jpg"
+    },
+    {
+      "_id": 6,
+      "category": "Breakfast",
+      "name": "Big Breakfast",
+      "price": 3,
+      "calorie": 430,
+      "image": "/images/s-mcdonalds-Big-Breakfast-Regular-Size-Biscuit.jpg"
+    },
+    {
+      "_id": 7,
+      "category": "Burgers",
+      "name": "Big Mac",
+      "price": 1.9,
+      "calorie": 200,
+      "image": "/images/t-mcdonalds-Big-Mac.jpg"
+    },
+    {
+      "_id": 8,
+      "category": "Burgers",
+      "name": "Hamburger",
+      "price": 1.5,
+      "calorie": 410,
+      "image": "/images/t-mcdonalds-Hamburger.jpg"
+    },
+    {
+      "_id": 9,
+      "category": "Burgers",
+      "name": "McDouble",
+      "price": 3,
+      "calorie": 320,
+      "image": "/images/t-mcdonalds-McDouble.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "number": 1,
+      "isPaid": false,
+      "isReady": false,
+      "inProgress": true,
+      "isCanceled": false,
+      "isDelivered": false,
+      "id": 1,
+      "orderType": "Eat in",
+      "orderItems": [
+        {
+          "_id": 7,
+          "name": "Big Mac",
+          "price": 1.9,
+          "quantity": 1
+        },
+        {
+          "_id": 1,
+          "name": "Coca-Cola",
+          "price": 1,
+          "quantity": 1
+        }
+      ],
+      "paymentType": "Pay here",
+      "taxPrice": 0.44,
+      "totalPrice": 3.34,
+      "createdAt": "2021-11-27T20:35:32.699Z",
+      "updatedAt": "2021-11-27T20:35:32.699Z"
+    },
+    {
+      "orderItems": [
+        {
+          "_id": 3,
+          "category": "Beverages",
+          "name": "Hot Chocolate",
+          "price": 2,
+          "calorie": 170,
+          "image": "/images/t-mcdonalds-McCafe-Hot-Chocolate-Medium.jpg",
+          "quantity": 1
+        },
+        {
+          "_id": 4,
+          "category": "Breakfast",
+          "name": "Bacon & Biscuit",
+          "price": 1.9,
+          "calorie": 90,
+          "image": "/images/t-mcdonalds-Bacon-Egg-Cheese-Biscuit-Regular-Size-Biscuit.jpg",
+          "quantity": 1
+        }
+      ],
+      "orderType": "Eat in",
+      "paymentType": "Pay here",
+      "taxPrice": 0.59,
+      "totalPrice": 4.49,
+      "itemsCount": 2,
+      "id": 2
+    },
+    {
+      "orderItems": [
+        {
+          "_id": 3,
+          "category": "Beverages",
+          "name": "Hot Chocolate",
+          "price": 2,
+          "calorie": 170,
+          "image": "/images/t-mcdonalds-McCafe-Hot-Chocolate-Medium.jpg",
+          "quantity": 1
+        },
+        {
+          "_id": 4,
+          "category": "Breakfast",
+          "name": "Bacon & Biscuit",
+          "price": 1.9,
+          "calorie": 90,
+          "image": "/images/t-mcdonalds-Bacon-Egg-Cheese-Biscuit-Regular-Size-Biscuit.jpg",
+          "quantity": 1
+        }
+      ],
+      "orderType": "Eat in",
+      "paymentType": "Pay here",
+      "taxPrice": 0.59,
+      "totalPrice": 4.49,
+      "itemsCount": 2,
+      "id": 3
+    },
+    {
+      "orderItems": [
+        {
+          "_id": 1,
+          "category": "Beverages",
+          "name": "Coca-Cola",
+          "calorie": 120,
+          "price": 1,
+          "image": "/images/t-mcdonalds-Coca-Cola-Classic-Small.jpg",
+          "quantity": 1
+        },
+        {
+          "_id": 9,
+          "category": "Burgers",
+          "name": "McDouble",
+          "price": 3,
+          "calorie": 320,
+          "image": "/images/t-mcdonalds-McDouble.jpg",
+          "quantity": 2
+        }
+      ],
+      "orderType": "Eat in",
+      "paymentType": "Pay here",
+      "taxPrice": 1.05,
+      "totalPrice": 8.05,
+      "itemsCount": 3,
+      "id": 4
+    },
+    {
+      "orderItems": [
+        {
+          "_id": 5,
+          "category": "Breakfast",
+          "name": "Blueberry Muffin",
+          "price": 1.5,
+          "calorie": 120,
+          "image": "/images/t-blueberry-muffin.jpg",
+          "quantity": 2
+        },
+        {
+          "_id": 3,
+          "category": "Beverages",
+          "name": "Hot Chocolate",
+          "price": 2,
+          "calorie": 170,
+          "image": "/images/t-mcdonalds-McCafe-Hot-Chocolate-Medium.jpg",
+          "quantity": 1
+        }
+      ],
+      "orderType": "Take out",
+      "paymentType": "Pay here",
+      "taxPrice": 0.75,
+      "totalPrice": 5.75,
+      "itemsCount": 3,
+      "id": 5
+    }
+  ]
+}
